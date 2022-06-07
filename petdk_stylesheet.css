@@ -1,0 +1,190 @@
+/* General style elements */
+
+* {
+  box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+  }
+
+/* Fonts */
+
+h1 {
+  font-family: 'Bahnschrift', sans-serif;
+  font-size: 45px;
+  text-align: center;
+  color: #537b30;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  text-align: center;
+  color: #808080;
+  margin: 10px 8px 22px 0;
+}
+
+b {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  text-align: center;
+  color: #849972;
+  margin: 10px 8px 22px 0;
+}
+
+/* Topbar */
+
+.topbar {
+  width: 100%;
+  height: 35px;
+  background-color: #013334;
+}
+
+/* Buttons */
+button {
+  background-color: #849972;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: #849972 solid 1px;
+  cursor: pointer;
+  width: 100%;
+  opacity: 1;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  float: center;
+}
+
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #ffffff;
+  border: #849972 solid 1px;
+  color: #849972;
+}
+
+.cancelbtn, .signupbtn {
+  float: center;
+  width: 100%;
+  justify-content: center;
+}
+
+button:hover {
+  opacity:0.5;
+}
+
+/* Header */
+
+.header {
+  overflow: hidden;
+  background-color: #ffffff;
+  padding: 20px 10px;
+  width: 100%;
+  }
+
+.header img {
+    max-height: none;
+    min-width: 150px;
+    max-width: 30%;
+  }
+
+/* Formular */
+#inputs {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+input[type=text],
+input[type=password],
+input[type=date],
+#pettype {
+  width: 100%;
+  padding: 15px;
+  display: inline-block;
+  border: #849972 solid 1px;
+  background: #ffffff;
+  max-width: 100%;
+  text-align: left;
+  color: #808080;
+  margin: 10px 8px 22px 0;
+}
+
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=date]:focus,
+#pettype {
+  outline: #849972;
+}
+
+/* Footer */
+
+  .footer {
+    display: flex;
+    margin-top: 50px;
+    background-color: #013334;
+    width: 100%;
+    height: 15%;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: #ffffff;
+  }
+
+/* Media query for desktop */
+
+@media screen and (max-width: 1200px) {
+  .headermenu a {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+
+  .header img {
+    min-width: 25%;
+    max-width: 25%;
+  }
+
+  .headermenu {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  float: right;
+  max-width: 50%;
+}
+
+  .headermenu a {
+  float: right;
+  color: #808080;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 17px;
+  line-height: 25px;
+  border-radius: 4px;
+  margin-top: 50px;
+}
+
+.headermenu a:hover {
+  color: #849972;
+  font-size: 18px;
+}
+
+}
